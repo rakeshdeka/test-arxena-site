@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+
+# Flask
+instance/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React
+build/
+/dist/
+.DS_Store
+npm-debug.log
+yarn-error.log
+
+# Virtual Environment
+venv/
+env/
+
+# IDE (e.g., PyCharm, VSCode)
+.idea/
+.vscode/
+
+# Miscellaneous
+*.log
+*.pyc
+*.pyo
+*.db
+*.sqlite
+*.json
+*.db-journal
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+*.env
