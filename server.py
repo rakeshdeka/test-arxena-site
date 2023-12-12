@@ -25,5 +25,24 @@ def send_company_static_js(path, number):
     return send_from_directory(app.static_folder, path)
 
 if __name__ == '__main__':
-    # app.config['SESSION_TYPE'] = 'filesystem'
+    app.config['SESSION_TYPE'] = 'filesystem'
     app.run(port=5051, host='localhost', debug=True, use_debugger=True, use_reloader=True)
+
+# mine code
+
+# from flask  import Flask, jsonify
+# from flask_cors import CORS
+
+# app = Flask(__name__)
+
+# CORS(app)
+
+# @app.route('/api/data', methods=['GET'])
+# def get_data():
+#     data = {
+#         "message":"Hello this is api endpoint"
+#     }
+#     return jsonify(data)
+
+# if __name__ =='__main__':
+#     app.run(host='0.0.0.0', debug=True)
