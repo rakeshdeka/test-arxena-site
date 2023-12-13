@@ -1,43 +1,21 @@
 
-// import './App.css'
-// import { useState, useEffect } from "react"
-
-// function App() {
-//   const [data, setData] = useState({})
-//   useEffect(()=>{
-//     fetchData()
-//   },[]);
- 
-//   const fetchData= async()=>{
-//     try{
-//       const res = await fetch("http://127.0.0.1:5000/api/data")
-//       const jsonData = await res.json();
-//       setData(jsonData)
-//     }catch(err){
-//       console.log("error",err);
-
-//     }
-
-//   }
-
-//   return (
-//     <>
-//     <h1>Frontend</h1>
-//     <h3>{data.message}</h3>
-
-//     </>
-//   )
-// }
-
-// export default App
-
 // import React from 'react'
 import Home from './Pages/Home/Home'
+import SignUp from './Pages/SignUp/SignUp'
+import Login from './Pages/Login/Login'
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 
 const App = () => {
   return (
     <>
-    <Home/>
+ <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
+
     </>
   )
 }
