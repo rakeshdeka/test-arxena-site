@@ -37,13 +37,13 @@ function Home() {
             <div className="h-[70%] ">
                 <div className="h-[60%]  flex justify-center items-center flex-col ">
                     
-                    <div className="  h-[35%] w-[30%] sm:w-[25%] sm:h-[30%] md:w-[15%] ">
+                    <div className="  h-[20%] w-[30%] sm:w-[25%] sm:h-[30%] md:w-[15%] ">
                        <Link to="/">
                         <img src={arxenaLogo} alt="arxenaLogo" className="w-full h-full"/>
                         {/* <p>logo</p> */}
                         </Link>
                         </div>
-                        <div className="h-[20%] w-[40%] mt-8 ">
+                        <div className="h-[20%] w-[65%] sm:w-[40%] mt-8 ">
                         <input type="text" className=" bg-[#F7F7FB] shadow-lg w-full text-[.8rem] appearance-none outline-none border-none h-full rounded-3xl pl-10" placeholder="🔍 Serach any company's org chart"/>
                         {/* <div className="h-full bg-[#ffff0025]">
                              <img src={upload} alt="new_upload" className="h-full" />
@@ -56,7 +56,7 @@ function Home() {
 
                 </div>
                 <div className=" h-[40%]  flex justify-center text-sm">
-                    <div className=" w-[35%] h-[15%] sm:w-[25%] lg:w-[15%] flex justify-center items-center">
+                    <div className=" w-[33%] h-[11%] sm:h-[15%] sm:w-[25%] lg:w-[15%] flex justify-center items-center">
                         <img src={poweredByGpt4} alt="poweredByGpt4" className="w-full h-full" />
                     </div>
                 </div>
@@ -64,14 +64,14 @@ function Home() {
 <div className="h-[20%] text-[.8rem]  flex justify-between  items-end flex-col md:flex-row">
   <div className=" h-[50%] w-full md:w-[90%]  flex flex-col">
     <div className="h-[50%]">
-      <p className="text-[.95rem] "> OrgGPT - Talent Identification Software for Ambitious Companies</p>
+      <p className="text-[.8rem] sm:text-[.95rem] "> OrgGPT - Talent Identification Software for Ambitious Companies</p>
     </div>
-    <div className="text-[blue] h-[50%]  flex gap-2">
-      <a href="#" className="">Pricing <span className="text-[black] text-[1rem] font-bold">|</span> </a>
-      <a href="#" className="">Terms of Service <span className="text-[black] text-[1rem] font-bold">|</span> </a>
-      <a href="#" className="">Privacy Policy <span className="text-[black] text-[1rem] font-bold">|</span> </a>
-      <a href="#" className="">How to Use <span className="text-[black] text-[1rem] font-bold">|</span> </a>
-      <a href="#" className="">Download Extension <span className="text-[black] text-[1rem] font-bold">|</span> </a>
+    <div className="text-[blue] border border-black sm:h-[50%] flex gap-1 ">
+      <a href="#" className=" border border-black">Pricing <span className="  text-[black] text-[.8rem] sm:text-[1rem] font-bold">|</span> </a>
+      <a href="#" className=" border border-black">Terms of Service <span className="text-[black] text-[.8rem] sm:text-[1rem] font-bold">|</span> </a>
+      <a href="#" className="border border-black">Privacy Policy <span className="text-[black] text-[.8rem] sm:text-[1rem] font-bold">|</span> </a>
+      <a href="#" className=" border border-black">How to Use <span className="text-[black] text-[.8rem] sm:text-[1rem] font-bold">|</span> </a>
+      <a href="#" className=" border border-black">Download Extension <span className="text-[black] text-[.8rem] sm:text-[1rem] font-bold">|</span> </a>
     </div>
   </div>
 
