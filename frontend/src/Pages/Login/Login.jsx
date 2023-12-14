@@ -1,12 +1,12 @@
 // import React from 'react';
 import arxenaLogo from "../../assets/arxena-logo_new.png";
 import { Link } from "react-router-dom";
-import dp from "../../assets/mannan_pacha_dp.webp"
-import quote from "../../assets/quote.png"
-import quote1 from "../../assets/quote1.png"
-import linkedin from "../../assets/linkedin_logo.png"
-import eyLogo from "../../assets/EY_logo_2019.png"
-
+// import dp from "../../assets/mannan_pacha_dp.webp"
+// import quote from "../../assets/quote.png"
+// import quote1 from "../../assets/quote1.png"
+// import linkedin from "../../assets/linkedin_logo.png"
+// import eyLogo from "../../assets/EY_logo_2019.png"
+import Aside from "../../components/Aside/Aside";
 const LoginPage = () => {
   return (  
 <div className="min-w-[380px] h-[100vh] flex ">
@@ -16,7 +16,7 @@ const LoginPage = () => {
        <img
           src={arxenaLogo}
           alt="Logo"
-          className="w-full h-20"
+          className="w-full h-10 md:h-16"
         />
         </Link>
     
@@ -64,16 +64,16 @@ const LoginPage = () => {
 
         {/* Forgot Password Link */}
         <p className="mt-2 text-sm text-gray-600">
-          <a href="#" className="text-blue-500">
+          <a href="#" className=" text-[1rem] text-[#c5c5cd]">
             Forgot your password? Reset it here
           </a>
         </p>
 
         {/* Sign Up Link */}
-        <p className="mt-4 text-sm text-gray-600">
+        <p className="mt-4 text-sm  text-[1rem] text-[#c5c5cd]">
           Need an account?{' '}
           <Link to="/signup">
-          <a href="#" className="text-blue-500">
+          <a href="#" className=" text-[1rem] text-[#c5c5cd]">
             Sign up for free
           </a>
           </Link>
@@ -83,45 +83,8 @@ const LoginPage = () => {
   </div>
   </div>
 
-  <div className=" hidden w-[30%] sm:flex sm:justify-center sm:items-center bg-gradient-to-t from-[#B8CFFF] to-[#FDFDFF]">
-        <div className="w-[95%] h-[80%] border border-black">
-          <div className=" h-[30%] flex justify-center items-center ">
-            <div className="h-24 w-24 rounded-full ">
-              <img src={dp} alt="dp" className="w-full h-full rounded-full" />
-            </div>
-          </div>
-          <div className=" h-[10%]">
-            <div className="h-full">
-              <img src={quote} alt="quote" className="h-full"/>
-            </div>
-          </div>
-          <div className="h-[25%] ">
-            <p className="">Arxena helps me map with large F100 accounts saving me hours of manual work for resourcing projects.</p>
-          </div>
-          <div className=" h-[5%]">
-            <p>Mannan Pacha <span >|</span></p>
-          </div>
-          <div className=" h-[5%]">
-            Manager - Ernst & Young
-          </div>
-          <div className=" h-[5%]">
-            <div className="h-full">
-              <img src={eyLogo} alt="eylogo" className="h-full" />
-            </div>
-          </div>
-          <div className=" h-[5%] mt-5">
-            <div className="h-full">
-              <img src={linkedin} alt="linkedin" className="h-full" />
-            </div>
-          </div>
-          <div className=" h-[10%]">
-            <div className="h-full flex justify-end">
-              <img src={quote1} alt="quote1" className="h-full"/>
-            </div>
-          </div>
-
-        </div>
-  </div>
+ 
+  <Aside/>
 </div>
   );
 };

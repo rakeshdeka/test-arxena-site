@@ -1,11 +1,13 @@
 // import React from 'react';
 import arxenaLogo from "../../assets/arxena-logo_new.png";
 import { Link } from "react-router-dom";
-import dp from "../../assets/mannan_pacha_dp.webp"
-import quote from "../../assets/quote.png"
-import quote1 from "../../assets/quote1.png"
-import linkedin from "../../assets/linkedin_logo.png"
-import eyLogo from "../../assets/EY_logo_2019.png"
+// import dp from "../../assets/mannan_pacha_dp.webp"
+// import quote from "../../assets/quote.png"
+// import quote1 from "../../assets/quote1.png"
+// import linkedin from "../../assets/linkedin_logo.png"
+// import eyLogo from "../../assets/EY_logo_2019.png"
+// import bgimg from "../../assets/bgimg.svg"
+import Aside from "../../components/Aside/Aside";
 const SignUp = () => {
   return (
 
@@ -17,14 +19,14 @@ const SignUp = () => {
        <img
           src={arxenaLogo}
           alt="Logo"
-          className="w-full h-20"
+          className="w-full h-10 md:h-16"
         />
         </Link>
     
   </div>
-  <div className=" w-full sm:w-[100%] h-full  flex justify-center items-center border border-black">
-    <div className="w-[90%] h-[100%] md:h-[90%] md:w-[70%]  p-4 rounded-lg shadow-2xl flex flex-col border gap-6">
-       <p className="mb-6 text-gray-700">
+  <div className=" w-full sm:w-[100%] h-full  flex justify-center items-center">
+    <div className="w-[80%] h-[100%] md:h-[90%] md:w-[70%]  p-10 rounded-lg shadow-2xl flex flex-col border gap-2">
+       <p className="mb-6 text-gray-700 text-[1.333325rem] leading-[2rem] text-center">
           Get started with 10 free org-chart credits.
 No        credit card is needed.
     </p>
@@ -118,15 +120,15 @@ No        credit card is needed.
           </button>
         </form>
          <div className="mt-4 text-sm text-gray-600">
-          <p>
+          <p  className="text-[1rem] text-[#c5c5cd]">
             Already registered?{' '}
             <Link to="/login">
-            <a href="#" className="text-blue-500">
+            <a href="#" className="border-b-2 border-dotted text-[#c5c5cd] ">
               Log in instead
             </a>
             </Link>
           </p>
-          <p className="mt-2">
+          <p className="mt-2 text-[1rem] text-[#c5c5cd] ">
             Account lock: We discourage license sharing. Your account will be
             accessible from this device only.
           </p>
@@ -135,45 +137,8 @@ No        credit card is needed.
   </div>
   </div>
 
-  <div className=" hidden w-[30%] sm:flex sm:justify-center sm:items-center bg-gradient-to-t from-[#B8CFFF] to-[#FDFDFF]">
-        <div className="w-[95%] h-[80%] border border-black">
-          <div className=" h-[30%] flex justify-center items-center ">
-            <div className="h-24 w-24 rounded-full ">
-              <img src={dp} alt="dp" className="w-full h-full rounded-full" />
-            </div>
-          </div>
-          <div className=" h-[10%]">
-            <div className="h-full">
-              <img src={quote} alt="quote" className="h-full"/>
-            </div>
-          </div>
-          <div className="h-[25%] ">
-            <p className="">Arxena helps me map with large F100 accounts saving me hours of manual work for resourcing projects.</p>
-          </div>
-          <div className=" h-[5%]">
-            <p>Mannan Pacha <span >|</span></p>
-          </div>
-          <div className=" h-[5%]">
-            Manager - Ernst & Young
-          </div>
-          <div className=" h-[5%]">
-            <div className="h-full">
-              <img src={eyLogo} alt="eylogo" className="h-full" />
-            </div>
-          </div>
-          <div className=" h-[5%] mt-5">
-            <div className="h-full">
-              <img src={linkedin} alt="linkedin" className="h-full" />
-            </div>
-          </div>
-          <div className=" h-[10%]">
-            <div className="h-full flex justify-end">
-              <img src={quote1} alt="quote1" className="h-full"/>
-            </div>
-          </div>
 
-        </div>
-  </div>
+  <Aside/>
 </div>
 
 
