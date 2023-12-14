@@ -1,11 +1,7 @@
 // import React from 'react';
 import arxenaLogo from "../../assets/arxena-logo_new.png";
 import { Link } from "react-router-dom";
-// import dp from "../../assets/mannan_pacha_dp.webp"
-// import quote from "../../assets/quote.png"
-// import quote1 from "../../assets/quote1.png"
-// import linkedin from "../../assets/linkedin_logo.png"
-// import eyLogo from "../../assets/EY_logo_2019.png"
+
 import Aside from "../../components/Aside/Aside";
 const LoginPage = () => {
   return (  
@@ -21,34 +17,34 @@ const LoginPage = () => {
         </Link>
     
   </div>
-  <div className=" w-full sm:w-[100%] h-full  flex justify-center items-center">
-    <div className="w-[70%] h-[50%]  p-4 rounded-lg shadow-2xl flex justify-center items-center flex-col">
-      <p className="mb-6 text-gray-700 text-2xl font-semibold">
+  <div className=" w-full sm:w-[100%] md:h-full h-[80%]  flex justify-center items-center ">
+    <div className="w-[60%] h-[60%]  p-4 rounded-lg shadow-2xl flex justify-center items-center flex-col">
+      <p className="mb-6 text-gray-700 text-2xl">
           Welcome back!
         </p>
 
         {/* Login Form */}
         <form className="w-[90%] flex justify-center items-center flex-col">
           {/* Email */}
-          <div className="mb-4 w-full ">
+          <div className="mb-4 w-full h-[35px] ">
             
             <input
               type="email"
               id="email"
               name="email"
-              className="form-input pl-2 rounded-lg border w-full"
+              className="form-input pl-2 rounded-lg border w-full h-full"
               placeholder='Email'
             />
           </div>
 
           {/* Password */}
-          <div className="mb-4 w-full">
+          <div className="mb-4 w-full h-[35px]">
             
             <input
               type="password"
               id="password"
               name="password"
-              className="form-input pl-2 rounded-lg border w-full"
+              className="form-input pl-2 rounded-lg border w-full h-full"
               placeholder='Password'
             />
           </div>
@@ -56,7 +52,7 @@ const LoginPage = () => {
           {/* Login Button */}
           <button
             type="submit"
-            className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+            className="w-[45%] sm:w-[50%] md:w-[40%]  bg-blue-500 text-white py-2 px-4 rounded-3xl hover:bg-blue-600"
           >
             Log In
           </button>
