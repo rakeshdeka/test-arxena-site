@@ -1,6 +1,6 @@
 // import React from 'react'
 import dp from "../../assets/mannan_pacha_dp.webp"
-import quote from "../../assets/quote.png"
+import quote from "../../assets/quote.webp"
 import quote1 from "../../assets/quote1.png"
 import linkedin from "../../assets/linkedin_logo.png"
 import eyLogo from "../../assets/EY_logo_2019.png"
